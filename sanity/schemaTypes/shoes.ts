@@ -1,11 +1,9 @@
-import { Sneaker } from "@phosphor-icons/react/dist/ssr";
 import { defineField, defineType } from "sanity";
 
 export const shoes = defineType({
   name: "shoes",
   title: "Shoes",
   type: "document",
-  icon: Sneaker,
   fields: [
     defineField({
       name: "title",

@@ -1,11 +1,9 @@
-import { UserCircle } from "@phosphor-icons/react/dist/ssr";
 import { defineField, defineType } from "sanity";
 
 export const user = defineType({
   name: "user",
   title: "User",
   type: "document",
-  icon: UserCircle,
   fields: [
     defineField({
       name: "id",
