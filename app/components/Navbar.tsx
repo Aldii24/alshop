@@ -4,7 +4,6 @@ import Favorite from "./Favorite";
 import Profile from "./Profile";
 import MobileMenu from "./MobileMenu";
 import { auth, signIn, signOut } from "../auth";
-import { SignOut } from "@phosphor-icons/react/dist/ssr";
 
 const Navbar = async () => {
   const session = await auth();
@@ -44,7 +43,7 @@ const Navbar = async () => {
                   await signOut();
                 }}
               >
-                <SignOut size={20} weight="bold" />
+                Keluar
               </button>
             </>
           ) : (

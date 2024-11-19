@@ -1,4 +1,3 @@
-import { ShoppingBag } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 
 const Cart = () => {
@@ -12,7 +11,7 @@ const Cart = () => {
       <p className="absolute -top-1 -right-1 bg-color-primary text-xs text-white w-[15px] h-[15px] flex items-center justify-center rounded-full">
         7
       </p>
-      <ShoppingBag className="" />
+      Tas
       <p className="sm:text-sm text-xs sm:font-semibold font-normal">Cart</p>
     </Link>
   );

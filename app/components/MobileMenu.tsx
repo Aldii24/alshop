@@ -1,12 +1,6 @@
 "use client";
 
 import SearchForm from "./SearchForm";
-import {
-  Heart,
-  ShoppingBag,
-  TextAlignLeft,
-  X,
-} from "@phosphor-icons/react/dist/ssr";
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
@@ -52,19 +46,7 @@ const MobileMenu = () => {
   return (
     <>
       <div className="flex items-center gap-4">
-        {isOpen ? (
-          <X
-            size={25}
-            className="sm:hidden text-gray-500 cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
-          />
-        ) : (
-          <TextAlignLeft
-            size={25}
-            className="sm:hidden text-gray-500 cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
-          />
-        )}
+        {isOpen ? "X" : "->"}
 
         <SearchForm />
       </div>
@@ -87,13 +69,12 @@ const MobileMenu = () => {
               <div className="w-full h-[1px] bg-gray-200 mb-10 mt-2"></div>
 
               <Link href="/cart" className="flex gap-2 items-center">
-                <ShoppingBag size={20} className="text-gray-500" />
-                <p className="text-sm font-semibold text-gray-500">Cart</p>
+                -<p className="text-sm font-semibold text-gray-500">Cart</p>
               </Link>
               <div className="w-full h-[1px] bg-gray-200 my-4"></div>
 
               <Link href="/favorites" className="flex gap-2 items-center">
-                <Heart size={20} className="text-gray-500" />
+                -
                 <p className="text-sm font-semibold text-gray-500">Favorites</p>
               </Link>
               <div className="w-full h-[1px] bg-gray-200 my-4"></div>

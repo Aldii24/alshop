@@ -1,7 +1,6 @@
 import { urlFor } from "@/sanity/lib/image";
 import { sanityFetch } from "@/sanity/lib/live";
 import { SHOES_QUERY_BY_ID } from "@/sanity/lib/queries";
-import { Heart, ShoppingBag } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 
 const page = async ({ params }: { params: { id: string } }) => {
@@ -63,12 +62,9 @@ const page = async ({ params }: { params: { id: string } }) => {
 
         <div className="flex items-center gap-2 pt-4">
           <button className="flex items-center justify-center gap-2 px-4 py-2 w-full bg-black text-white rounded-lg shadow-xl">
-            <ShoppingBag size={20} />
             <p>Add to cart</p>
           </button>
-          <div className="bg-color-secondary rounded-md p-2 cursor-pointer">
-            <Heart size={20} className="text-gray-500" />
-          </div>
+          <div className="bg-color-secondary rounded-md p-2 cursor-pointer"></div>
         </div>
 
         <p className="text-sm text-gray-600">

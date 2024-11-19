@@ -1,6 +1,5 @@
 "use client";
 
-import { CaretLeft, CaretRight } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -53,7 +52,7 @@ const CaraouselHome = ({ autoPlay }: { autoPlay: boolean }) => {
           className="absolute left-5 bg-gray-200 p-2 rounded-full shadow-[3px_3px_0_rgb(0,0,0)]
            active:shadow-[1px_1px_0_rgb(0,0,0)] active:translate-y-1 hover:bg-gray-300"
         >
-          <CaretLeft />
+          3
         </button>
 
         <div className="flex justify-between px-20 w-full items-center">
@@ -78,7 +77,7 @@ const CaraouselHome = ({ autoPlay }: { autoPlay: boolean }) => {
           onClick={handleNext}
           className="absolute right-5 bg-gray-200 p-2 rounded-full shadow-[3px_3px_0_rgb(0,0,0)] active:shadow-[1px_1px_0_rgb(0,0,0)] active:translate-y-1 hover:bg-gray-300"
         >
-          <CaretRight />
+          3
         </button>
       </div>
     </div>
