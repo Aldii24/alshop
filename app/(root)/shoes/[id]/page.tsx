@@ -5,7 +5,7 @@ import { Heart, ShoppingBag } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 
 const page = async ({ params }: { params: { id: string } }) => {
-  const { id } = params;
+  const id = (await params).id;
 
   const { data: shoe } = await sanityFetch({
     query: SHOES_QUERY_BY_ID,
