@@ -1,21 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  font-family: "Manrope", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.image-caraousel {
+  width: 700px;
+  height: 400px;
+}
+
+
+@media screen and (min-width: 360px) {
+  .image-caraousel {
+    width: 300px;
+    height: 200px;
+  }
+
+  .profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
+  .image-card {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+  }
+
+}
+
+@media screen and (min-width: 640px) {
+  .image-caraousel {
+    width: 700px;
+    height: 450px;
+  }
+
+  .image-card {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.image-shoes {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.image-detail {
+  width: 300px;
+  height: 300px;
 }
